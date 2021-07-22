@@ -321,7 +321,7 @@ describe('Tree', function() {
       var nodeId = tree.getChildIds(tree.getRootNodeId())[0];
       var newChildIds = tree.resetAllData(testData, nodeId);
 
-      expect(tree.getNodeData(newChildIds[0])).toEqual({ text: 'A1' });
+      expect(tree.getNodeData(newChildIds[0])).toEqual({ text: 'A' });
       expect(tree.getNodeData(newChildIds[1])).toEqual({ text: 'B' });
     });
   });
